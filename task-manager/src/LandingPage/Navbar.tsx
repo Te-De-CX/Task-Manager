@@ -14,9 +14,9 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <GoTasklist className="w-8 h-8 text-slate-300" />
-            <span className="ml-2 text-xl font-semibold text-slate-300">
-              GoTaskList
+            <GoTasklist className="w-8 h-8 " />
+            <span className="ml-2 text-xl font-bold ">
+              MyTask
             </span>
           </div>
 
@@ -24,7 +24,7 @@ const Navbar: React.FC = () => {
           <div className="flex items-center md:hidden">
             <button
               onClick={toggleMenu}
-              className="text-slate-300 hover:text-white focus:outline-none"
+              className=" hover:text-white focus:outline-none"
             >
               <svg
                 className="w-6 h-6"
@@ -47,22 +47,28 @@ const Navbar: React.FC = () => {
           <div className="hidden md:flex items-center space-x-4">
             <a
               href="#"
-              className="text-slate-300 hover:text-white transition duration-300"
+              className=" hover:text-white transition duration-300"
             >
               Home
             </a>
             <a
               href="#"
-              className="text-slate-300 hover:text-white transition duration-300"
+              className=" hover:text-white transition duration-300"
             >
               Tasks
             </a>
             <a
               href="#"
-              className="text-slate-300 hover:text-white transition duration-300"
+              className=" hover:text-white transition duration-300"
             >
               Profile
             </a>
+          </div>
+          <div className="hidden md:flex items-center space-x-4">
+            <a href="">Login</a>
+            <button className="bg-white px-4 py-2 rounded-lg font-semibold text-black">
+              Sign Up
+            </button>
           </div>
         </div>
       </div>
@@ -76,19 +82,19 @@ const Navbar: React.FC = () => {
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <a
             href="#"
-            className="block text-slate-300 hover:text-white transition duration-300"
+            className="block  hover:text-white transition duration-300"
           >
             Home
           </a>
           <a
             href="#"
-            className="block text-slate-300 hover:text-white transition duration-300"
+            className="block  hover:text-white transition duration-300"
           >
             Tasks
           </a>
           <a
             href="#"
-            className="block text-slate-300 hover:text-white transition duration-300"
+            className="block  hover:text-white transition duration-300"
           >
             Profile
           </a>

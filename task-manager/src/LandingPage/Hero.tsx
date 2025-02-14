@@ -6,12 +6,12 @@ const HeroSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           {/* Headline */}
-          <h1 className="text-5xl font-bold mb-6 text-slate-300 animate-fade-in">
+          <h1 className="text-5xl font-bold mb-6  animate-fade-in">
             Organize Your Tasks Effortlessly
           </h1>
 
           {/* Description */}
-          <p className="text-lg text-slate-300 mb-8 max-w-2xl mx-auto animate-fade-in-up">
+          <p className="text-lg  mb-8 max-w-2xl mx-auto animate-fade-in-up">
             GoTaskList is your ultimate task management tool. Stay organized,
             boost productivity, and achieve your goals with ease. Whether you're
             managing personal tasks or team projects, we've got you covered.

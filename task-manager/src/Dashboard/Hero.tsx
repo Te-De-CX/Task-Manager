@@ -7,8 +7,9 @@ export default function Hero() {
   return (
     <>
       <section>
-        <div className='flex items-center'>
-        <div className='flex bg-yellow-100 rounded-2xl overflow-hidden mt-5 ml-5'>
+        <div className='flex items-center gap-4'>
+        <div className="flex flex-col ml-5">
+        <div className='flex bg-yellow-100 rounded-2xl overflow-hidden mt-5 '>
           <div className='flex flex-col justify-center items-center px-8'>
             <h3 className='capitalize font-semibold text-2xl'>hello {name} !</h3>
             <p>it's good to see you again.</p>
@@ -17,18 +18,18 @@ export default function Hero() {
 
           </div>
         </div>
-        <div>
-          <div>
-            <h3>11</h3>
-            <p>hours worked</p>
+        <div className="flex items-center gap-4 mt-5">
+          <div className="bg-gray-500 py-3 px-5 rounded-xl w-40">
+            <h3 className="font-bold text-2xl">11</h3>
+            <p className="font-regular text-md capitalize">hours worked</p>
           </div>
-          <div>
-            <h3>$2.4k</h3>
-            <p>money paid</p>
+          <div className="bg-gray-500 py-3 px-5 rounded-xl w-40">
+            <h3 className="font-semibold text-2xl">$2.4k</h3>
+            <p className="font-regular text-md capitalize">money paid</p>
           </div>
-          <div>
-            <h3>36</h3>
-            <p>task done</p>
+          <div className="bg-gray-500 py-3 px-5 rounded-xl w-40">
+            <h3 className="font-semibold text-2xl">36</h3>
+            <p className="font-regular text-md capitalize">task done</p>
           </div>
         </div>
         <div>
@@ -48,21 +49,26 @@ export default function Hero() {
             line chart
           </div>
         </div>
-        <div>
-          <div className='flex justify-between items-center'>
-            <input type="text" />
+        </div>
+        
+        <div className="flex flex-col">
+        <div className="flex flex-col">
+          <div className='flex  items-center '>
+            <input type="text" className="rounded-lg border-black border-2 h-8 px-2 w-60" />
             <VscBell />
             <img src="/src/assets/hero.png" alt="hero" className='w-8 h-8 rounded-sm' />
           </div>
-          <div>
-            <h2>
+          <div className="flex gap-5 px-5 py-3 bg-gray-600 rounded-2xl mt-3 justify-between items-center">
+          <div className="flex flex-col">
+          <h2 className="text-lg font-semibold capitalize">
               create task
             </h2>
             <p>
               create a new task.
             </p>
+          </div>
             <div>
-            <FaPlus />
+            <FaPlus className="bg-white text-3xl p-2 rounded-md" />
             </div>
           </div>
         </div>
@@ -94,6 +100,7 @@ export default function Hero() {
               <input type="checkbox" name="" id="" />
             </div>
           </div>
+        </div>
         </div>
         </div>
       </section>

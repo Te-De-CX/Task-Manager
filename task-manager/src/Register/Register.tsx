@@ -4,7 +4,7 @@ import Form from "../components/Form";
 function Register() {
     return (
         <div className="page-container">
-            <Form route="/api/register/" method="register" />
+            <Form route="/api/user/register/" method="register" />
         </div>
     );
 }
